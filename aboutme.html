@@ -8,26 +8,69 @@
   <meta content="description" name="description">
   <meta name="google" content="notranslate" />
   <meta content="" name="jessica">
-
-
   <meta name="msapplication-tap-highlight" content="no">
-  
+
   <link rel="" sizes="180x180" href="">
   <link href="" rel="icon">
 
   <title>Title page</title>  
 
-<link href="./main.3f6952e4.css" rel="stylesheet"></head>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./main.3f6952e4.css" rel="stylesheet">
+  
+  <style>
+    .image-container {
+      position: relative;
+      width: 100%;
+      height: 350px; /* Adjust this to control how much of the image is shown */
+      overflow: hidden;
+    }
+  
+    .image-container img {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      top: -50px; /* Adjust this to crop the top part of the image */
+      object-fit: cover;
+    }
 
-<body class="">
-<div id="site-border-left"></div>
-<div id="site-border-right"></div>
-<div id="site-border-top"></div>
-<div id="site-border-bottom"></div>
+    @media (max-width: 768px) {
+      .image-container {
+        height: 250px; /* Adjust height for mobile */
+      }
+      .image-container img {
+        top: -30px; /* Adjust top crop for mobile */
+      }
+    }
 
-<header>
-  <nav class="navbar  navbar-fixed-top navbar-default">
-    <div class="container">
+    .iframe-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="site-border-left"></div>
+  <div id="site-border-right"></div>
+  <div id="site-border-top"></div>
+  <div id="site-border-bottom"></div>
+
+  <header>
+    <nav class="navbar navbar-fixed-top navbar-default">
+      <div class="container">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
@@ -35,22 +78,18 @@
           <span class="icon-bar"></span>
         </button>
 
-      <div class="collapse navbar-collapse" id="navbar-collapse">
-        <ul class="nav navbar-nav ">
-          <li><a href="./home.html" title="">01 : Home</a></li>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="./home.html" title="">01 : Home</a></li>
+            <li><a href="./aboutme.html" title="">02 : About me</a></li>
+            <li><a href="./contact.html" title="">03 : Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-          <li><a href="./aboutme.html" title="">02 : About me</a></li>
-          <li><a href="./contact.html" title="">03 : Contact</a></li>
-         
-        </ul>
-
-
-      </div> 
-    </div>
-  </nav>
-</header>
-
-<div class="section-container">
+  <div class="section-container">
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
@@ -63,18 +102,11 @@
               <div class="row">
                 <div class="col-xs-12 col-md-6">
                   <h3>👀 Hi, I'm Jessica! (She/her)</h3>
-                  <p> 🌱 I'm a HBSc graduate from University of Toronto in Computer Science, Mathematics and Statistics. I am interested in Machine Learning, Artificial Intelligence, Robotics, Appliciation of Applied Mathematics and problem solving.
-                  With a passion to code, I am looking for a new grad tech roles to help advance my knowledge and career as a coder. Please feel free to reach out to me! :) 
-                    
-                  </p>
-                  <h3> </h3>
-                  <p>
-                  <h3></h3>
-                  <p>
-                  </p>
-                 <iframe src="https://docs.google.com/document/d/e/2PACX-1vTToVtwj0xPSQh8JfYrU7yBSobSwiXxuBBS_8q0K1ulZO6h2-J0mM1fmmPdmV2b15mzveGyOdqkbKA6/pub?embedded=true" width="816" height="1056"></iframe>
-                 
+                  <p>🌱 I'm a HBSc graduate from University of Toronto in Computer Science, Mathematics and Statistics. I am interested in Machine Learning, Artificial Intelligence, Robotics, Application of Applied Mathematics, and problem solving. With a passion to code, I am looking for new grad tech roles to help advance my knowledge and career as a coder. Please feel free to reach out to me! :)</p>
                   
+                  <div class="iframe-container">
+                    <iframe src="https://docs.google.com/document/d/e/2PACX-1vTToVtwj0xPSQh8JfYrU7yBSobSwiXxuBBS_8q0K1ulZO6h2-J0mM1fmmPdmV2b15mzveGyOdqkbKA6/pub?embedded=true" frameborder="0"></iframe>
+                  </div>
                 </div>
                  
                 <div class="col-xs-12 col-md-6">
@@ -82,65 +114,42 @@
                     <img src="profile2.jpeg" class="img-responsive" alt="">
                   </div>
                 </div>
-                
-                <style>
-                  .image-container {
-                    position: relative;
-                    width: 100%;
-                    height: 350px; /* Adjust this to control how much of the image is shown */
-                    overflow: hidden;
-                  }
-                
-                  .image-container img {
-                    position: absolute;
-                    width: 100%;
-                    height: auto;
-                    top: -50px; /* Adjust this to crop the top part of the image */
-                    object-fit: cover;
-                  }
-                </style>
-
               </div>
             </div>
           </div>
-          
-         
        </div>
       </div>
     </div>
   </div>
-  
-  
 
-<footer class="footer-container text-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <p>© Jessica Batta  <a href="" title=""></a><a href="" title=""></a></p>
+  <footer class="footer-container text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <p>© Jessica Batta</p>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function (event) {
-     navActivePage();
-  });
-</script>
-
-
-
-<script>
-  (function (i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-      (i[r].q = i[r].q || []).push(arguments)
-    }, i[r].l = 1 * new Date(); a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-  ga('create', '9454752a-1554-45c0-88a7-1b3d24e07e16', 'auto');
-  ga('send', 'pageview');
-</script>
-
- <script type="text/javascript" src="./main.70a66962.js"></script></body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      navActivePage();
+    });
+  </script>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '9454752a-1554-45c0-88a7-1b3d24e07e16', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script type="text/javascript" src="./main.70a66962.js"></script>
+</body>
 
 </html>

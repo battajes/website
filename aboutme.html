@@ -41,11 +41,20 @@
       .image-container img {
         top: -30px; /* Adjust top crop for mobile */
       }
+      .iframe-container {
+        height: 500px; /* Adjust iframe height for mobile */
+      }
+    }
+
+    @media (min-width: 769px) {
+      .iframe-container {
+        height: 1056px; /* Full height for desktop */
+      }
     }
 
     .iframe-container {
       position: relative;
-      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      padding-bottom: 56.25%; /* 16:9 aspect ratio for mobile */
       height: 0;
       overflow: hidden;
       max-width: 100%;
